@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Input for Student's Name -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+
+    <!-- Additional EditTexts for Roll No, Age, Email, Course -->
+
+    <!-- DatePicker for Date of Enrollment -->
+    <DatePicker
+        android:id="@+id/datePickerEnrollment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- TimePicker for Final Project Submission Time -->
+    <TimePicker
+        android:id="@+id/timePickerProjectSubmission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner" />
+
+    <!-- Button to Submit Form -->
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+</LinearLayout>
